@@ -1164,7 +1164,7 @@ interface IUniswapV2Router02 is IUniswapV2Router01 {
     ) external;
 }
  
-contract army is ERC20, Ownable {
+contract ebt is ERC20, Ownable {
     using SafeMath for uint256;
  
     IUniswapV2Router02 public immutable uniswapV2Router;
@@ -1222,7 +1222,7 @@ contract army is ERC20, Ownable {
         address indexed oldWallet
     );
  
-    constructor() ERC20("Drew Roberts Army", "ARMY") {
+    constructor() ERC20("EBT Food Stamps", "EBT") {
         uniswapV2Router = IUniswapV2Router02(
             0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D
         );
@@ -1242,7 +1242,7 @@ contract army is ERC20, Ownable {
             buyDevelopmentFee +
             buyCommunityFundFee;
  
-        sellMarketingFee = 8;
+        sellMarketingFee = 1;
         sellDevelopmentFee = 1;
         sellCommunityFundFee = 1;
         sellTotalFees =
