@@ -1236,9 +1236,9 @@ contract ebt is ERC20, Ownable {
         maxWallet = (totalSupply) / 100;  //1% of total supply (1,000,000,000 tokens)
         swapTokensAtAmount = (totalSupply * 5) / 10000;
  
-        buyMarketingFee = 1;
-        buyDevelopmentFee = 1;
-        buyCommunityFundFee = 1;
+        buyMarketingFee = 0;
+        buyDevelopmentFee = 0;
+        buyCommunityFundFee = 0;
         buyTotalFees =
             buyMarketingFee +
             buyDevelopmentFee +
